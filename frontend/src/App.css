@@ -1,0 +1,153 @@
+
+.App {
+  /*text-align: center;*/
+  background-color: rgba(217, 216, 216, 0.27);
+  margin-left: 3rem;
+  margin-right:1rem;
+  overflow-y: auto;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.peach-button{
+  background-color: #ed4848;
+  margin-left: 10px;
+  width:80px;
+
+}
+.white-button{
+  background-color: #d9d8d8;
+  margin-left: 10px;
+  width:80px;
+
+}
+
+.pink-button{
+  background-color: #e39090;
+  margin-left: 10px;
+  width:80px;
+
+}
+#root{
+  height:100vh;
+  background-color: #f8f9fa;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.list-group-item{
+  border:none;
+  height: 7vh;
+  padding-left: 15px;
+}
+#wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#sidebar-wrapper {
+  /*min-height: 100vh;*/
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+
+}
+
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100vw;
+
+  }
+  .App{
+    margin-left: 18rem;
+  }
+  div.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  div.sb-sidenav-toggled div.App{
+    margin-left: 3rem;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
